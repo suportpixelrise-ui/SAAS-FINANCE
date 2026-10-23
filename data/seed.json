@@ -74,6 +74,16 @@
       "id": "d4",
       "date": "2026-10-23",
       "text": "Teto de mídia definido pelo usuário: R$ 500/mês. Plano: R$ 300 de teste inicial e R$ 200 de reserva; Vmake separado. Nenhuma campanha lançada."
+    },
+    {
+      "id": "d3",
+      "date": "2026-10-23",
+      "text": "Usuário confirmou Vmake: cerca de R$ 25/mês e 1.000 créditos; consumo por vídeo ainda não verificado."
+    },
+    {
+      "id": "d5",
+      "date": "2026-10-23",
+      "text": "Painel estático no Netlify com dados no navegador e troca manual por ZIP com o ChatGPT. Sem login nem sincronização automática."
     }
   ],
   "updated_at": null,

@@ -50,10 +50,10 @@ class Handler(BaseHTTPRequestHandler):
         if path=='/api/state':
             with LOCK: self.respond(200,read_state())
             return
-        files={'/':'index.html','/landing':'landing.html','/app.js':'app.js','/style.css':'style.css'}
+        files={'/project.json':'project.json','/zip.js':'zip.js','/':'index.html','/landing':'landing.html','/app.js':'app.js','/style.css':'style.css'}
         if path not in files: self.respond(404,{'error':'Não encontrado'}); return
-        f=ROOT/'web'/files[path]
-        kind={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8'}[f.suffix]
+        f=ROOT/'data/seed.json' if path=='/project.json' else ROOT/'web'/files[path]
+        kind={'.json':'application/json; charset=utf-8','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8'}[f.suffix]
         self.respond(200,f.read_bytes(),kind)
     def do_PUT(self):
         if self.path!='/api/state': self.respond(404,{'error':'Não encontrado'}); return

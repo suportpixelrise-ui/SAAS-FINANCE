@@ -1,35 +1,43 @@
-# Caixa Leve — projeto de produto financeiro
+# Caixa Leve — painel estático para Netlify
 
-Estrutura inicial para validar um SaaS brasileiro de organização financeira para prestadores de serviço. Nome provisório, sem pesquisa de marca. A aplicação implementada é um **painel local de gestão do projeto**, com protótipo da página de venda. OCR, documentos, pagamentos, notificações, anúncio e integração com IA ainda não foram implementados.
+## Baixar e publicar sem instalar programas
 
-## Executar
+O arquivo [downloads/caixa-leve-netlify.zip](downloads/caixa-leve-netlify.zip) contém o site pronto, sem backend ou build.
 
-Requer Python 3.12+, sem pacotes externos:
+1. Baixe e extraia o ZIP.
+2. Entre em https://app.netlify.com/drop e envie a pasta extraída que contém `index.html`.
+3. Abra o endereço criado pelo Netlify.
+4. Para futuras versões, entre no **mesmo site**, na seção de deploys, e envie a nova pasta. Não crie outro site, pois o armazenamento do navegador é separado por endereço.
+
+## Trocar dados com o ChatGPT
+
+- Na aba **Trocar dados com ChatGPT**, escolha **Baixar dados para enviar**. Anexe o ZIP à conversa e descreva o que quer alterar. O ZIP inclui os dados atuais, mesmo com alterações ainda não salvas.
+- O assistente pode devolver um ZIP de dados contendo `project.json`, sem compressão (`ZIP_STORED`). Use **Importar ZIP ou JSON atualizado**. Há validação, resumo e confirmação; um backup da tela anterior é baixado antes de aplicar a substituição. Não é uma mesclagem automática.
+- Se receber um ZIP do site inteiro atualizado, publique no mesmo site. Os dados já salvos permanecem; use **Revisar e aplicar dados deste ZIP do site** para substituir pelo plano incluído, caso desejado.
+- ZIPs comprimidos de outras ferramentas podem precisar ser extraídos para importar apenas `project.json`. Pacotes exportados pelo painel são aceitos diretamente.
+
+Dados ficam no `localStorage` do navegador. Não há login, banco remoto ou comunicação automática com o ChatGPT. Limpar o navegador apaga a cópia local; outro dispositivo exige importar o backup. Dados editados não são enviados ao Netlify, mas qualquer arquivo dentro do ZIP publicado é público. Não publique dados privados no pacote; use apenas o plano público inicial e importe dados pelo painel depois.
+
+## Desenvolvimento e pacotes
 
 ```sh
-cd /workspace/SAAS-FINANCE
+python scripts/package_netlify.py
+# Só use --state com dados que podem ser públicos:
+python scripts/package_netlify.py --state caminho/plano-publico.json --output artifacts/nova-versao.zip
 python server.py
 ```
 
-No computador em que o servidor estiver rodando, abra a porta 8000 no navegador; `/` é o painel e `/landing` é a página de oferta. No ambiente de nuvem, uma publicação com acesso pelo seu navegador ainda depende de hospedagem e autenticação. Não há link público disponível. O servidor escuta somente loopback por padrão; não o exponha diretamente à internet.
+Python 3.12+, sem dependências de produção. O servidor local mantém API legada para compatibilidade; a interface atual usa apenas armazenamento do navegador e plano público `data/seed.json`. `data/state.json` da versão antiga não é importado automaticamente: use o JSON pela aba de transferência.
 
 ```sh
 python -m unittest discover -s tests -v
 node --check web/app.js
+node --check web/zip.js
+# Teste real de navegador, requer Playwright instalado:
+python tests/browser_netlify.py
 ```
 
-## O que está pronto
-
-- Edição de oferta, orçamento, tarefas, decisões, roteiros e resultados manuais de campanhas.
-- CPL, conversão e CAC de mídia calculados a partir dos dados informados; sem números de performance inventados.
-- Persistência atômica, controle de revisão para evitar sobrescritas entre sessões, exportação/importação JSON.
-- Landing page honesta sobre o estágio do produto, sem checkout nem captação de leads fictícios.
-
-## Compartilhar o contexto com o assistente
-
-O estado inicial está em `data/seed.json`. Ao salvar no navegador, o estado ativo passa a `data/state.json`, ignorado pelo Git para não publicar informações comerciais ou pessoais. Neste mesmo workspace, o assistente pode consultar o arquivo e atualizar pela API `GET/PUT /api/state`, incluindo a revisão atual. Recarregue o painel após atualizações pelo chat. Não há chamada automática a modelos nem integração garantida entre sessões. Em outro ambiente, importe uma exportação ou restaure seu backup; Git sozinho não sincroniza o estado privado.
-
-Para uso online com contas e acesso por vários dispositivos, seguir `docs/04-produto-e-arquitetura.md`. Não colocar documentos financeiros, CPFs, dados bancários ou credenciais neste painel local.
+Skill do projeto: `.agents/skills/project-ops/SKILL.md`. Não publicar dados privados em commits ou no ZIP. Novas versões destinadas ao usuário devem preservar alterações recebidas no último pacote e explicitar a substituição de dados.
 
 ## Documentos
 

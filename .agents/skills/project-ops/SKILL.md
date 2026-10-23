@@ -14,3 +14,6 @@ description: Atualizar estratégia, experimentos e painel do projeto Caixa Leve 
 7. Código: rode `python -m unittest discover -s tests -v` e `node --check web/app.js`. Documente mudanças e publique no GitHub somente dentro do escopo solicitado. Gasto, campanha ao vivo e comunicações externas exigem instrução explícita.
 
 Esta skill foi criada para este repositório. Não instala ferramentas externas nem conecta este chat a serviços por conta própria.
+
+## Modo Netlify e pacotes (atual)
+O estado atual do usuário chega por ZIP exportado, não pela API Python. Leia project.json do anexo e preserve todas as informações não alteradas. Retorne ZIP sem compressão (ZIP_STORED) com project.json para importação no painel. Para mudanças no código do site, gere scripts/package_netlify.py. Use --state só se o conteúdo puder ser público. Dados privados devem ser devolvidos em pacote separado de dados, nunca como parte do deploy. A interface armazena dados no navegador, e o assistente não sincroniza automaticamente.
