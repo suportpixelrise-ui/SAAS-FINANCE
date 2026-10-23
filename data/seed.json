@@ -1,0 +1,76 @@
+{
+  "project": {
+    "name": "Caixa Leve",
+    "stage": "Validação da oferta",
+    "budget": 1500,
+    "price": 79,
+    "audience": "Prestadores de serviço com 1–5 pessoas",
+    "goal": "Validar 5 clientes pagantes antes de ampliar o produto",
+    "notes": "Nome, preço e público são hipóteses. Pesquisa externa pendente de liberação de rede."
+  },
+  "tasks": [
+    {
+      "id": "t1",
+      "title": "Entrevistar 10 prestadores sobre contas e cobranças",
+      "status": "A fazer",
+      "owner": "Fundador"
+    },
+    {
+      "id": "t2",
+      "title": "Verificar preços e anúncios nas fontes oficiais",
+      "status": "Bloqueado",
+      "owner": "Pesquisa"
+    },
+    {
+      "id": "t3",
+      "title": "Definir piloto de 5 clientes com cobrança real e termos",
+      "status": "A fazer",
+      "owner": "Fundador"
+    },
+    {
+      "id": "t4",
+      "title": "Conectar domínio, hospedagem, autenticação e banco",
+      "status": "A fazer",
+      "owner": "Produto"
+    },
+    {
+      "id": "t5",
+      "title": "Confirmar link e licença do VLab Maker",
+      "status": "Bloqueado",
+      "owner": "Criativos"
+    }
+  ],
+  "campaigns": [],
+  "creatives": [
+    {
+      "id": "c1",
+      "name": "O comprovante perdido",
+      "hook": "O cliente pagou. Mas você lembra qual conta vence amanhã?",
+      "angle": "Organização",
+      "status": "Roteiro"
+    },
+    {
+      "id": "c2",
+      "name": "Cobrar sem constrangimento",
+      "hook": "Você entregou o serviço. E a cobrança ficou para depois?",
+      "angle": "Contas a receber",
+      "status": "Roteiro"
+    },
+    {
+      "id": "c3",
+      "name": "Fechar o dia",
+      "hook": "Quanto sobrou hoje, depois das contas?",
+      "angle": "Rotina",
+      "status": "Roteiro"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "d1",
+      "date": "2026-10-23",
+      "text": "Começar por prestadores de serviço, sem estoque, com registro assistido e confirmação humana."
+    }
+  ],
+  "updated_at": null,
+  "revision": 0
+}
