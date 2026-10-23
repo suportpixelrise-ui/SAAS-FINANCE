@@ -25,7 +25,7 @@ Exemplo Essencial: receita R$ 79, custos variáveis totais estimados R$ 24 (proc
 
 CAC completo = (mídia + criação + vendas + ferramentas de aquisição alocadas) / novos pagantes da mesma coorte. CAC do painel mede só mídia. Payback = CAC completo / contribuição mensal. Se contribuição ≤ 0, não escalar. LTV não deve ser estimado por churn de uma coorte minúscula; observar retenção real em 30/60/90 dias antes de usar aproximações.
 
-R$ 1.500 de mídia, sem qualquer outro custo, exigiriam ao menos 10 pagantes para CAC de mídia ≤ R$ 165 (1500/165 arredondado para cima). Isso não é meta garantida nem evidência de viabilidade. O custo completo exige mais receita, menor custo de aquisição ou maior contribuição.
+R$ 500 de mídia, sem qualquer outro custo, exigiriam ao menos 4 pagantes para CAC de mídia ≤ R$ 165 (500/165 arredondado para cima). Isso não é meta garantida nem evidência de viabilidade. O custo completo exige mais receita, menor custo de aquisição ou maior contribuição.
 
 ## Mecanismos de venda
 

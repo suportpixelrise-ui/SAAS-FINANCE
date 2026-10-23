@@ -1,6 +1,6 @@
 # Plano de tráfego e experimentos
 
-Orçamento provisório: R$ 1.500/mês, exclusivamente mídia. Não aprovado para gasto. Criativos, ferramentas, impostos e operação são adicionais. Nenhuma conta ou campanha foi conectada.
+Teto de orçamento informado pelo usuário: até R$ 500/mês, exclusivamente mídia. Não aprovado para gasto. Criativos, ferramentas, impostos e operação são adicionais. Nenhuma conta ou campanha foi conectada.
 
 ## Pré-requisitos de lançamento
 
@@ -8,7 +8,7 @@ Página publicada com HTTPS e canal real de inscrição; identidade da empresa; 
 
 ## Distribuição para aprender
 
-Começar em um canal (hipótese: Meta) para não pulverizar orçamento. R$ 900 na primeira fase: R$ 30/dia por 30 dias, um conjunto de público e até 3 criativos. Reservar R$ 600 para substituir peças ou ampliar o teste após revisar sinais, sem obrigação de gastar a reserva. A duração pode ser reduzida; orçamento é teto. Com esse volume, resultados tendem a ser exploratórios e não sustentam certezas estatísticas.
+Começar em um canal (hipótese: Meta) para não pulverizar orçamento. R$ 300 na primeira fase: R$ 15/dia por 20 dias, um conjunto de público e até 2 criativos ativos. Manter o terceiro roteiro como variação de reserva. Reservar R$ 200 para substituir peças ou ampliar o teste após revisar sinais, sem obrigação de gastar a reserva. A duração pode ser reduzida; orçamento é teto. Com esse volume, resultados tendem a ser exploratórios e não sustentam certezas estatísticas.
 
 Público: um nicho, Brasil/região coerente com suporte, 18+, sem presumir dificuldade financeira pessoal do espectador. Validar segmentações disponíveis na conta; não inventar interesses. Testar primeiro ganchos mantendo oferta e página fixas. Só depois variar público ou preço. Google Search é segundo teste se houver demanda de intenção observável e orçamento adicional; TikTok orgânico pode testar linguagem sem mídia paga.
 
@@ -30,6 +30,6 @@ UTMs: `utm_source=meta&utm_medium=paid_social&utm_campaign=piloto_servicos_v1&ut
 
 ## Regras operacionais propostas
 
-Revisão após 72h ou R$ 90 por criativo, o que acontecer depois, respeitando teto de gasto. Esses valores são limites de inspeção, não significância. Se rastreamento falhar, parar o teste. Se gastar até o CAC máximo planejado sem pagante e sem pipeline qualificado, pausar e investigar antes de mais verba; venda com ciclo mais longo exige acompanhamento da coorte. Escalar só após pagamentos, ativação, margem e retenção observadas; aumentar em passos pequenos definidos na conta pelo responsável.
+Revisar o conjunto após 72h e novamente a cada R$ 75 acumulados, respeitando o teto total de R$ 500. A plataforma pode distribuir a verba desigualmente entre criativos; não presumir gasto igual por peça. Esses valores são limites de inspeção, não significância. Se rastreamento falhar, parar o teste. Se gastar até o CAC máximo planejado sem pagante e sem pipeline qualificado, pausar e investigar antes de mais verba; venda com ciclo mais longo exige acompanhamento da coorte. Escalar só após pagamentos, ativação, margem e retenção observadas; aumentar em passos pequenos definidos na conta pelo responsável.
 
 Hipóteses virais: checklist de fechamento semanal sem dados financeiros expostos; demonstração “caos → próximo passo”; modelo educativo para cobrar de forma respeitosa; convite voluntário após benefício observado. Medir compartilhamentos, leads e retenção. Não há receita garantida para viralizar, e compartilhamento não substitui venda. Programa de indicação só com antifraude e custo definido, sem acesso a contatos do usuário.

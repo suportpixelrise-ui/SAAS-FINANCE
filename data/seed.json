@@ -2,7 +2,7 @@
   "project": {
     "name": "Caixa Leve",
     "stage": "Validação da oferta",
-    "budget": 1500,
+    "budget": 500,
     "price": 79,
     "audience": "Prestadores de serviço com 1–5 pessoas",
     "goal": "Validar 5 clientes pagantes antes de ampliar o produto",
@@ -69,6 +69,11 @@
       "id": "d1",
       "date": "2026-10-23",
       "text": "Começar por prestadores de serviço, sem estoque, com registro assistido e confirmação humana."
+    },
+    {
+      "id": "d4",
+      "date": "2026-10-23",
+      "text": "Teto de mídia definido pelo usuário: R$ 500/mês. Plano: R$ 300 de teste inicial e R$ 200 de reserva; Vmake separado. Nenhuma campanha lançada."
     }
   ],
   "updated_at": null,

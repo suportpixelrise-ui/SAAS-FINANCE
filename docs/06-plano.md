@@ -14,4 +14,4 @@ Responsável inicial por decisões e entrevistas: fundador. Assistente: organiza
 
 Toda semana: atualizar campanhas e decisões no painel, exportar backup, informar mudanças no chat, revisar custos e impedimentos. Painel local fica disponível enquanto o processo e a máquina estiverem ativos; não equivale a hospedagem permanente.
 
-Pendências externas: aplicar e publicar configuração de rede para pesquisa; confirmar verba de tráfego (hipótese atual R$ 1.500/mês); verificar conta/recursos/licença do Vmake; escolher domínio/hospedagem e autenticação para uso online. Não pedir chave em chat; configurar credenciais pelo mecanismo seguro da hospedagem escolhida.
+Pendências externas: aplicar e publicar configuração de rede para pesquisa; verba de tráfego definida pelo usuário em até R$ 500/mês, sem campanha autorizada ou conectada; verificar conta/recursos/licença do Vmake; escolher domínio/hospedagem e autenticação para uso online. Não pedir chave em chat; configurar credenciais pelo mecanismo seguro da hospedagem escolhida.
